@@ -1,0 +1,8 @@
+C:\Users\fums\source\repos\Lotr2Inspector\Lotr2Inspector\obj\Debug\Lotr2Inspector.csprojAssemblyReference.cache
+C:\Users\fums\source\repos\Lotr2Inspector\Lotr2Inspector\obj\Debug\Lotr2Inspector.csproj.CoreCompileInputs.cache
+C:\Users\fums\source\repos\Lotr2Inspector\Lotr2Inspector\bin\Debug\Lotr2Inspector.dll
+C:\Users\fums\source\repos\Lotr2Inspector\Lotr2Inspector\bin\Debug\Lotr2Inspector.pdb
+C:\Users\fums\source\repos\Lotr2Inspector\Lotr2Inspector\obj\Debug\Lotr2Inspector.dll
+C:\Users\fums\source\repos\Lotr2Inspector\Lotr2Inspector\obj\Debug\Lotr2Inspector.pdb
+C:\Users\fums\source\repos\Lotr2Inspector\Lotr2Inspector\obj\Debug\Lotr2Inspector.Form1.resources
+C:\Users\fums\source\repos\Lotr2Inspector\Lotr2Inspector\obj\Debug\Lotr2Inspector.csproj.GenerateResource.cache
