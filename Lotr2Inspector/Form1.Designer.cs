@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.btGenerateTowns = new System.Windows.Forms.Button();
+			this.btGeneratePlayers = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// btGenerateTowns
@@ -41,11 +42,22 @@
 			this.btGenerateTowns.UseVisualStyleBackColor = true;
 			this.btGenerateTowns.Click += new System.EventHandler(this.btGenerateTowns_Click);
 			// 
+			// btGeneratePlayers
+			// 
+			this.btGeneratePlayers.Location = new System.Drawing.Point(13, 42);
+			this.btGeneratePlayers.Name = "btGeneratePlayers";
+			this.btGeneratePlayers.Size = new System.Drawing.Size(118, 23);
+			this.btGeneratePlayers.TabIndex = 1;
+			this.btGeneratePlayers.Text = "Generate CT players";
+			this.btGeneratePlayers.UseVisualStyleBackColor = true;
+			this.btGeneratePlayers.Click += new System.EventHandler(this.btGeneratePlayers_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(146, 49);
+			this.ClientSize = new System.Drawing.Size(146, 78);
+			this.Controls.Add(this.btGeneratePlayers);
 			this.Controls.Add(this.btGenerateTowns);
 			this.Name = "Form1";
 			this.Text = "Form1";
@@ -56,5 +68,6 @@
 		#endregion
 
 		private System.Windows.Forms.Button btGenerateTowns;
+		private System.Windows.Forms.Button btGeneratePlayers;
 	}
 }

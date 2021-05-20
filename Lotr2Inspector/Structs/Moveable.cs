@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Lotr2Inspector.Structs
 {
 	// Represents something on the map that moves, like an army or a merchant
-	// WARNING: they're only updated when visible on the screen
+	// WARNING: They're only updated when visible on the screen. Also, the order
+	// and data types may change depending on what the moveable is.
     class Moveable : MemStruct
     {
 		public Moveable(int item)

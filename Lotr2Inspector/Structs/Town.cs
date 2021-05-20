@@ -89,14 +89,6 @@ namespace Lotr2Inspector.Structs
 					new MemStructProperty(0x23, 4, false)
 				},
 				{
-					"town name?",
-					new MemStructProperty(0x58, 1, false)
-				},
-				{
-					"town name??",
-					new MemStructProperty(0x70, 1, false)
-				},
-				{
 					"taxes",
 					new MemStructProperty(0xB4, 1, false)
 				},
@@ -169,7 +161,7 @@ namespace Lotr2Inspector.Structs
 					new MemStructProperty(0x17B, 1, false)
 				},
 				{
-					"cows",
+					"cows*",
 					new MemStructProperty(0x17F, 4, false)
 				},
 				{
@@ -197,7 +189,7 @@ namespace Lotr2Inspector.Structs
 					new MemStructProperty(0x227, 2, true)
 				},
 				{
-					"cows 2",
+					"cows",
 					new MemStructProperty(0x24B, 1, false)
 				},
 				{

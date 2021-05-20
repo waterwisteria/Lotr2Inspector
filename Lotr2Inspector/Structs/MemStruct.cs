@@ -75,7 +75,7 @@ namespace Lotr2Inspector.Structs
                     {
                         // This a byte so manually convert to a proper signed int because BitConverter won't do it.
                         case 1:
-                            r = BitConverter.ToUInt32(buffer, 0);
+                            r = BitConverter.ToUInt16(buffer, 0);
 
                             if (r > SByte.MaxValue)
                             {

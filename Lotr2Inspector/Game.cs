@@ -48,6 +48,11 @@ namespace Lotr2Inspector
 			get; set;
 		}
 
+		public static Player[] Players
+		{
+			get; set;
+		}
+
 		public static Tile[,] Tiles
 		{
 			get; set;
@@ -66,7 +71,13 @@ namespace Lotr2Inspector
 				State = new State();
 				Calendar = new Calendar();
 				Towns = new Town[Config.MAX_TOWNS];
+				Players = new Player[Config.MAX_PLAYERS];
 				Tiles = new Tile[Config.TILES_X, Config.TILES_Y];
+
+				for(int i = 0; i < Config.MAX_PLAYERS; i++)
+				{
+					Players[i] = new Player(i);
+				}
 
 				for (int i = 0; i < Config.MAX_TOWNS; i++)
 				{

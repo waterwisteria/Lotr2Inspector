@@ -60,6 +60,7 @@
     <Compile Include="Structs\MemStruct.cs" />
     <Compile Include="Structs\MemStructProperty.cs" />
     <Compile Include="Structs\Moveable.cs" />
+    <Compile Include="Structs\Player.cs" />
     <Compile Include="Structs\States.cs" />
     <Compile Include="Structs\StringArray.cs" />
     <Compile Include="Structs\Tile.cs" />

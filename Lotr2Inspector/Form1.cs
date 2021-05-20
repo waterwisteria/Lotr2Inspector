@@ -21,9 +21,19 @@ namespace Lotr2Inspector
 		}
 
 		private void btGenerateTowns_Click(object sender, EventArgs e)
+        {
+            generateCTXML(Game.Towns, "Town");
+		}
+
+        private void btGeneratePlayers_Click(object sender, EventArgs e)
+        {
+            generateCTXML(Game.Players, "Player");
+        }
+
+        private void generateCTXML(MemStruct[] memStructs, String itemName)
 		{
             uint ID = 0;
-            uint town = 0;
+            uint itemNum = 0;
             String VariableType = "";
 
             XmlWriterSettings settings = new XmlWriterSettings();
@@ -32,14 +42,14 @@ namespace Lotr2Inspector
             settings.CloseOutput = true;
             //settings.OmitXmlDeclaration = true;
 
-            using(XmlWriter writer = XmlWriter.Create("towns.CT", settings))
+            using(XmlWriter writer = XmlWriter.Create($"{itemName}.CT", settings))
             {
                 writer.WriteStartElement("CheatTable");
                 writer.WriteAttributeString("CheatEngineTableVersion", "31");
                 writer.WriteStartElement("CheatEntries");
 
                 //////////////////////////////////
-                foreach(Town t in Game.Towns)
+                foreach(MemStruct t in memStructs)
                 {
                     foreach(KeyValuePair<string, MemStructProperty> m in t.Properties)
                     {
@@ -61,13 +71,13 @@ namespace Lotr2Inspector
 
                         writer.WriteStartElement("CheatEntry");
                         writer.WriteElementString("ID", ID++.ToString());
-                        writer.WriteElementString("Description", $"\"Town {town} {m.Key}\"");
+                        writer.WriteElementString("Description", $"\"{itemName} {itemNum} {m.Key}\"");
                         writer.WriteElementString("VariableType", VariableType);
                         writer.WriteElementString("Address", $"Lords2.exe+{t.GetBaseStructAddress(m.Key).ToString("x")}");
                         writer.WriteEndElement(); // CheatEntry
                     }
 
-                    town++;
+                    itemNum++;
                 }
                 //////////////////////////////////
 
@@ -79,5 +89,5 @@ namespace Lotr2Inspector
                 writer.Flush();
             }
         }
-    }
+	}
 }
